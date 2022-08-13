@@ -23,7 +23,7 @@ jobs:
      - checkout
      - run:
            name: "print_world"
-           command: "echo world:      
+           command: "echo world"      
 workflows:
   welcome:
     jobs:
