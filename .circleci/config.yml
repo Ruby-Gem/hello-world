@@ -1,5 +1,7 @@
 version: 2.1
-
+orbs:
+  # Declare a dependency on the welcome-orb
+  welcome: circleci/welcome-orb@0.4.1
 jobs:
   say_hello:
     docker:
@@ -26,7 +28,7 @@ jobs:
           name: print_world
           command: echo world      
 workflows:
-  default:
+  welcome:
     jobs:
      - say_hello
      - print_hello:
