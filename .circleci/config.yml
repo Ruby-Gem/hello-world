@@ -8,7 +8,7 @@ jobs:
      - checkout
      - run:
           name: "say_hello"
-          command: "echo hello,world!" 
+          command: "echo hello world!" 
   print-hello:
     docker:
       - image: cimg/base:stable
