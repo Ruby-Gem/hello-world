@@ -35,11 +35,11 @@ jobs:
 
 workflows:
   welcome:
+  test-env-vars:
     jobs:
+     - build
      - say_hello
      - print_hello:
           requires: [say_hello]
      - print_world:
-          requires: [say_hello,print_hello]
-    test-env-vars:
-     - build      
+          requires: [say_hello,print_hello] 
